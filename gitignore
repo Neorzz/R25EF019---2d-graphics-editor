@@ -1,0 +1,13 @@
+# Compiled binary
+graphics_editor
+
+# Object files
+*.o
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+*.swp
+*.swo
