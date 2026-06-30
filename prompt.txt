@@ -1,0 +1,47 @@
+PROMPT.TXT — GenAI Prompts and Responses
+=========================================
+Tool Used: Claude (Anthropic)
+Project: 2D Graphics Editor in C (R25EF019)
+Date: 30 June 2026
+
+---
+
+PROMPT 1:
+---------
+Design and implement a menu-driven 2D Graphics Editor in C using a 2D character array as the drawing canvas. The canvas should initially be filled with '_' (underscore), and graphical objects should be drawn using '*' (asterisk).
+
+Requirements:
+1. Write functions to draw a circle, rectangle, line, and triangle.
+2. Support adding, deleting, and modifying objects.
+3. Use a 2D array of characters to store the picture.
+4. Write a function to display the picture.
+5. Make it menu-driven.
+
+RESPONSE 1:
+-----------
+A complete single-file C program (graphics_editor.c) was generated with:
+
+- Canvas: 40x80 2D char array, '_' for blank, '*' for drawn pixels.
+- Drawing algorithms:
+  - Line: Bresenham's line algorithm
+  - Rectangle: Four Bresenham lines forming edges
+  - Circle: Midpoint circle algorithm (8-way symmetry)
+  - Triangle: Three connected Bresenham lines
+- Object storage: Array of GfxObject structs with type, parameters, and active flag.
+- Operations: Add, Delete, Modify, Display, List objects, Clear all.
+- Menu-driven main loop with input validation.
+- Display function with coordinate axes and border.
+
+---
+
+PROMPT 2:
+---------
+Also generate a Makefile for the project.
+
+RESPONSE 2:
+-----------
+A Makefile was generated with:
+- gcc compiler with -Wall -Wextra -std=c99 flags
+- -lm linker flag for math.h
+- Targets: all, clean, run
+
