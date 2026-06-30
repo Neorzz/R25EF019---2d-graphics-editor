@@ -5,7 +5,7 @@
  * canvas.  Blank cells are '_' (underscore) and drawn pixels are '*' (asterisk).
  *
  * Supported shapes : Line, Rectangle, Circle, Triangle
- * Operations       : Add, Delete, Modify, Display, Clear, Undo last
+ * Operations       : Add, Delete, Modify, Display, Clear
  *
  * Compile: gcc -o graphics_editor graphics_editor.c -lm
  * Run    : ./graphics_editor
